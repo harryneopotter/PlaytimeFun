@@ -1,23 +1,51 @@
-# Dependencies
-/node_modules
-
-# Vite build output
-/dist
-
-# Environment variables
-.env.local
-.env.*.local
-
 # Logs
+logs
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
+lerna-debug.log*
 
-# IDE directories
-.vscode/
-.idea/
+node_modules
+dist
+dist-ssr
+*.local
+.env
+.env.*
 
-# OS generated files
+# Project housekeeping and docs (not required at runtime)
+Copilot-Processing.md
+Project_Architecture_Blueprint.md
+RELIABILITY_CHANGES.md
+RELIABILITY_TASKS.md
+WARP.md
+explain.txt
+
+# Local tools / scripts (not required at runtime)
+smriti_analyze.py
+smriticontext.kiro.yaml
+test_elevenlabs.js
+server.js
+
+# Tests and testing config
+vitest.config.ts
+**/*.test.ts
+**/*.test.tsx
+**/__tests__/**
+**/__mocks__/**
+
+# Repo meta not needed for runtime
+.github/
+Users/
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
 .DS_Store
-Thumbs.db
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
