@@ -39,6 +39,32 @@ vitest.config.ts
 .github/
 Users/
 
+# Common docs and non-app scripts (keep README.md tracked)
+*.txt
+*.md
+!README.md
+*.pdf
+*.rtf
+*.doc
+*.docx
+*.ppt
+*.pptx
+*.xls
+*.xlsx
+*.odt
+*.odp
+*.ods
+
+# Not used in this app stack
+*.py
+*.ipynb
+*.sh
+*.ps1
+
+# Misc temp/backups
+*.bak
+*.tmp
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
