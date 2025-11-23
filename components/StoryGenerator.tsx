@@ -82,7 +82,12 @@ const StoryGenerator: React.FC<{ userName: string | null }> = ({ userName }) => 
                 <button onClick={handleGenerateStory} disabled={loading} className="font-display bg-blue-600 hover:bg-blue-700 disabled:bg-slate-600 disabled:cursor-not-allowed text-white text-3xl px-10 py-4 rounded-full transition-transform transform hover:scale-105 shadow-lg">
                     {loading ? 'Thinking...' : 'Tell Me a Story!'}
                 </button>
-                 {error && <p className="text-red-400 mt-4">{error}</p>}
+                 {error && (
+                    <div className="text-center p-4 bg-red-500/20 rounded-xl border border-red-400 mt-4 animate-bounce-short">
+                        <div className="text-4xl mb-2">😢</div>
+                        <p className="text-red-200 font-bold">{error}</p>
+                    </div>
+                )}
             </div>
 
             {loading && <div className="mt-8"><Spinner message="Creating an awesome story..." /></div>}

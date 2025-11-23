@@ -9,8 +9,36 @@ import WelcomeScreen from './components/WelcomeScreen';
 import Piano from './components/Piano';
 
 const App: React.FC = () => {
-    const [view, setView] = useState<AppView>('story');
+    // Initialize view from URL hash or default to 'story'
+    const getInitialView = (): AppView => {
+        if (typeof window !== 'undefined') {
+            const hash = window.location.hash.replace('#', '');
+            if (['story', 'image', 'coloring', 'piano'].includes(hash)) {
+                return hash as AppView;
+            }
+        }
+        return 'story';
+    };
+
+    const [view, setView] = useState<AppView>(getInitialView);
     const [userName, setUserName] = useState<string | null>(() => localStorage.getItem('userName'));
+
+    // Sync view changes to URL hash
+    React.useEffect(() => {
+        window.location.hash = view;
+    }, [view]);
+
+    // Handle back/forward browser buttons
+    React.useEffect(() => {
+        const handleHashChange = () => {
+            const hash = window.location.hash.replace('#', '');
+            if (['story', 'image', 'coloring', 'piano'].includes(hash)) {
+                setView(hash as AppView);
+            }
+        };
+        window.addEventListener('hashchange', handleHashChange);
+        return () => window.removeEventListener('hashchange', handleHashChange);
+    }, []);
 
     const handleNameSet = (name: string) => {
         localStorage.setItem('userName', name);

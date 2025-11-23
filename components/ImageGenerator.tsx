@@ -93,7 +93,12 @@ const ImageGenerator: React.FC = () => {
                 </div>
             </div>
 
-            {error && <p className="text-red-400 mt-4 text-center">{error}</p>}
+            {error && (
+                <div className="text-center p-4 bg-red-500/20 rounded-xl border border-red-400 mt-4 animate-bounce-short">
+                    <div className="text-4xl mb-2">😢</div>
+                    <p className="text-red-200 font-bold">{error}</p>
+                </div>
+            )}
 
             {loading && <div className="mt-8"><Spinner message="Mixing the magic colors..." /></div>}
 
