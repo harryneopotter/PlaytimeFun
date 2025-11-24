@@ -1,12 +1,8 @@
 <div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+<img alt="PlaytimeFun Home Screen" src="./assets/home.jpg" />
 </div>
 
 # PlaytimeFun: The Kid's Hero Adventure Creator
-
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
 
 ## 📖 The Story Behind the App
 **"How I bought 2 days of peace with React and AI."**
@@ -20,6 +16,21 @@ By using their favorite characters and their native "Hinglish" language style, t
 - **Magic Art Studio**: AI-generated coloring pages and cartoons.
 - **Interactive Piano**: A web-audio piano for musical breaks.
 - **Read Aloud**: High-quality Text-to-Speech using ElevenLabs.
+
+## 📸 Visual Showcase
+
+<div align="center">
+<table>
+  <tr>
+    <td align="center"><img src="./assets/character-select.jpg" alt="Character Selection" width="400"/><br/><b>Choose Your Hero</b></td>
+    <td align="center"><img src="./assets/character-setting.jpg" alt="Story Settings" width="400"/><br/><b>Pick a Setting</b></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="./assets/cute-story.jpg" alt="Generated Story" width="400"/><br/><b>Read Amazing Stories</b></td>
+    <td align="center"><img src="./assets/piano-screen.jpg" alt="Interactive Piano" width="400"/><br/><b>Make Music</b></td>
+  </tr>
+</table>
+</div>
 
 ## 🚀 Run Locally
 
