@@ -54,5 +54,4 @@ This is a personal project built for a specific use case (entertaining family). 
 - **Accessibility & Offline**: These features are not implemented as the app is designed for supervised use in a connected environment.
 - **Error Handling**: Focus is on graceful degradation if APIs fail, rather than robust offline support.
 
-View your app in AI Studio: https://ai.studio/apps/drive/1-0M_QbbT6iFh2LZKaRUCfPXHqQyKM22m
 
